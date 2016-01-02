@@ -1,0 +1,2 @@
+difference add packet into yocto then build that packet and creat packet.rpm 
+and install into core.
