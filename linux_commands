@@ -1,0 +1,7 @@
+# creat a account root.
+sudo passwd
+
+# change pass for user
+passwd
+passwd user
+
