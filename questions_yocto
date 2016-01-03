@@ -1,2 +1,10 @@
-difference add packet into yocto then build that packet and creat packet.rpm 
+- difference add packet into yocto then build that packet and creat packet.rpm 
 and install into core.
+
+- when in building processes can I pause processes?
+
+- warnings: "Failed to fetch URL http://www.zlib.net/zlib-1.2.7.tar.bz2, attempting MIRRORS if available" 
+    + Can I continue and ignore warning? 
+    + Can I go to URL then download manual packet and put into poky folder?
+    + If wouldn't download that packet then have affect to processes?
+
