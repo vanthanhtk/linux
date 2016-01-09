@@ -1,0 +1,18 @@
+# install screen on server
+	sudo apt-get install screen
+# open screen
+	screen
+# if you want to nameing for screen, you use command
+	screen -s myname
+# exit screen 
+	"Ctrl+a+d
+# list screen
+	screen -ls
+# enter screen
+	screen -r 
+or if you have more screen you use command
+	screen -x name
+# interupt screen 
+	"Ctrl+a+k
+or if you have more screen
+	screen -s name -x quit
