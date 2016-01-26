@@ -1,0 +1,88 @@
+How to use screen command in linux?
+
+Screen command line utility in Linux used to connect multiple terminal session within a terminal, for long running processes (attach and detach). Screen manager is a terminal emulation running multiple terminal session within a single terminal console. This will help administrators to work on multiple tasks without killing the session or fear of lost of network connectivity.
+
+Steps
+
+Step 1:  Installing screen rpm package
+
+Step 2:  How to use screen terminal sessions
+
+Step 3:  Kill screen terminal session
+
+Let us see the steps in Details.
+
+Step 1:  Installing screen rpm package
+
+Dependency
+
+Package :  screen
+
+Install screen RPM package from report using the yum command line utility
+
+[root@experts ~]# yum install screen
+
+The screen command has several options to interact with the virtual terminal. Screen manual / help can be retrieved using below man command.
+
+#man screen
+
+Processes running in screen session will resumed and can manage by screen command options
+
+-r : reattach existing session
+
+-d : detach 
+
+ctrl+a+d  (detach being in screen session)
+
+ctrl+a+n :next window
+
+ctrl+a+p : previous winddow
+
+Step 2:  How to use screen terminal sessions
+
+Create the screen session by executing below command
+
+[root@experts ~]#screen
+
+or
+
+create the screen session by name as below
+
+[root@experts ~]#screen -S jbossrun
+
+Run below process and detach the session
+
+[root@experts ~]#top
+
+Run top process in a dedicated screen session and detach by using
+
+key combination (CTRL+A+d)
+
+List all screen sessions avaiable
+
+[root@experts ~]#screen -ls
+
+Connect specific screen session use below command
+
+[root@experts ~]#screen -r sessionid
+
+Detach from other terminal session use below command
+
+[root@experts ~]#screen -d sessionid
+
+Find the help how to use screen command
+
+[root@experts ~]#screen –help
+
+Step 3:  Kill screen terminal session
+
+terminate screen session
+
+[root@experts ~]# screen -X -S sessionid quit
+
+Several options available to use screen command.
+
+Thanks for watching .
+
+For more detail you can watch Video :
+http://solutionsatexperts.com/how-to-use-screen-command-in-linux/
